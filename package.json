@@ -1,5 +1,6 @@
 {
   "name": "react-three-fiber-project",
+  "homepage": "https://stefan-leung.github.io/TEST2/",
   "version": "0.1.1",
   "private": true,
   "dependencies": {
@@ -14,6 +15,8 @@
     "use-cannon": "0.5.3"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "npx gh-pages -d build",
     "start": "npx react-scripts start",
     "build": "npx react-scripts build",
     "test": "npx react-scripts test",
@@ -35,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
